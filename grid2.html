@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      #grid {
+        border: 5px solid pink;
+        display: grid;
+        grid-template-columns : 150px 1fr;
+        <!-- 150px, 1fr = 한쪽은 150px을 고정으로 사용하고 다른 속쪽이 나머지 -->
+        <!-- 2fr , 1fr 이면 총 3등분하여 앞쪽은 2/3, 뒷쪽은 1/3을 사용함 -->
+      }
+        <!-- https://caniuse.com :() 내가 사용하는 기술, 유효한 최신 CSS의 기능을
+        사용해도 되는지, 되지 않는지 data에 근거하여 판단 할 수 있는 사이트
+        여러 css, javascript, html 현재 웹브라우저들이 현재 얼마나 그 기술을
+        채택하고 있는지에 대한 정보가 나옴-->
+      div{
+        border: 5px solid gray;
+      }
+    </style>
+  </head>
+  <body>
+    <h1><a href="index.html">홈으로</a></h1>
+    <div id = "grid">
+      <div> NAVIGATION </div>
+      <div> ARTICLE</div>
+    </div>
+  </body>
+</html>
